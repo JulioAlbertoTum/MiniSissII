@@ -1,0 +1,19 @@
+<div id="user-login-template">
+    <div class="w3-container w3-purple w3-animate-top" >
+        <h2 class="w3-jumbo">Sign in</h2>
+    </div>
+    <form class="w3-container w3-animate-opacity">
+
+        <p>
+            <label>User name</label>
+            <input class="w3-input" ng-model="userLogin.userName" type="text" placeholder="your username " ></p>
+
+        <p>
+            <label>password</label>
+            <input class="w3-input" ng-model="userLogin.userPassword" type="password" placeholder="your password"></p>
+        <input  class="w3-btn  w3w3-xlarge-round w3-purple w3-border "
+                type="submit"
+                value="Sing in"
+                ng-click="userLogin.verifyUser()">
+    </form>
+</div>
